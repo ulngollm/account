@@ -1,4 +1,5 @@
 import 'package:account/screen/login.dart';
+import 'package:account/screen/userinfo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,10 @@ class AccountApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      home: Login(),
+      home: UserInfo(),
+      theme: CupertinoThemeData(
+        primaryColor: CupertinoColors.activeBlue
+      ),
     );
   }
 }
