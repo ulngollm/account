@@ -4,11 +4,10 @@ import 'package:account/view/profile/userinfo.dart';
 import 'package:flutter/cupertino.dart';
 
 class AccountApp extends StatelessWidget {
-  final _viewModel = RootViewModel();
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      home: _viewModel.hasToken ? UserInfo() : Login(),
+      home: Login(),
       theme: CupertinoThemeData(
         primaryColor: CupertinoColors.activeBlue
       ),
