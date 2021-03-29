@@ -14,10 +14,10 @@ class UserInfo extends StatelessWidget {
           padding: EdgeInsets.only(top: 25),
           child: Column(
             children: [
-              CupertinoListSection(),
+              CupertinoListSection({"Nickmane": 'Имя', "Активность":"малоподвижный"}),
               CupertinoListSectionDivider(),
               // VerticalDivider(),
-              CupertinoListSection()
+              CupertinoListSection({"выйти":""})
             ],
           ),
         ),
