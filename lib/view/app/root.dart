@@ -7,8 +7,8 @@ class AccountApp extends StatelessWidget {
     return CupertinoApp(
       home: Login(),
       theme: CupertinoThemeData(
-        primaryColor: CupertinoColors.activeBlue
-        
+        primaryColor: CupertinoColors.activeBlue,
+        scaffoldBackgroundColor: CupertinoColors.extraLightBackgroundGray
       ),
     );
   }

@@ -12,7 +12,8 @@ class Login extends StatelessWidget {
       builder: (context, model, _) =>
           BasicLayout(
             bodyWidget: LoginForm(), 
-            pageTitle: 'Авторизация'
+            pageTitle: 'Авторизация',
+            bckgColor: CupertinoColors.white,
           ),
       viewModelBuilder: () {
         return LoginViewModel();

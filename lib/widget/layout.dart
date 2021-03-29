@@ -14,21 +14,19 @@ class BasicLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      backgroundColor: bckgColor,
       child: SafeArea(
         child: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               CupertinoSliverNavigationBar(
-                backgroundColor: CupertinoColors.white,
+                backgroundColor: bckgColor,
                 largeTitle: Text(pageTitle??''),
                 border: null,
               ),
             ];
           },
-          body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50),
-            child: bodyWidget,
-          ),
+          body: bodyWidget,
         ),
       ),
     );
