@@ -23,7 +23,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_list_tile: ^0.1.4
   cupertino_icons: ^1.0.0
   dio: ^3.0.10
   stacked: ^1.9.1
